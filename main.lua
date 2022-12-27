@@ -29,10 +29,10 @@ local poi = Tab:CreateButton({
     local entity = Creator.createEntity({
       CustomName = "A60 (by ❤️I love Yuanshin❤️)", -- Custom name of your entity
       Model = "rbxassetid://11573495258", -- Can be GitHub file or rbxassetid
-      Speed = 100, -- Percentage, 100 = default Rush speed
+      Speed = 200, -- Percentage, 100 = default Rush speed
       DelayTime = 1.5, -- Time before starting cycles (seconds)
       HeightOffset = 1,
-      KillRange = 20,
+      KillRange = 50,
       BreakLights = true,
       BackwardsMovement = false,
       FlickerLights = {
@@ -41,8 +41,8 @@ local poi = Tab:CreateButton({
       },
       Cycles = {
         Min = 1,
-        Max = 5,
-        WaitTime = 4,
+        Max = 6,
+        WaitTime = 2,
       },
       CamShake = {
         true, -- Enabled/Disabled
@@ -288,9 +288,9 @@ local bsnsn = Tab:CreateButton({
             5, -- Time (seconds)
           },
           Cycles = {
-            Min = 1,
-            Max = 5,
-            WaitTime = 4,
+            Min = 2,
+            Max = 8,
+            WaitTime = 2,
           },
           CamShake = {
             true, -- Enabled/Disabled
