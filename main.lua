@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local HelloWorldsound = Instance.new("Sound")
-local key1 = "Door yoyoyo","1400700315染羽LLL","bruhwhyinot#7637","ikundoors114514叶B(你好2023)","556783738","jntmjntm2我爱原神roblox"
+local key1 = "Door yoyoyo"
 local Window = Rayfield:CreateWindow({
   Name = "script center",
   LoadingTitle = "Creator: ❤️I love Yuanshin❤️",
@@ -9,8 +9,8 @@ local Window = Rayfield:CreateWindow({
   KeySettings = {
     Title = "Script Center / Detect if you are a robot",
     Subtitle = "robot detection",
-    Key = key1,
-    Note = "Join discord.gg/dwBNFa48 to open the script channel to get the key"
+    Note = "Join discord.gg/dwBNFa48 to open the script channel to get the key",
+    Key = key1
   }
 })
 
