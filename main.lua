@@ -2,21 +2,21 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 local HelloWorldsound = Instance.new("Sound")
 local key1 = "556783738"
 local Window = Rayfield:CreateWindow({
-  Name = "script center",
-  LoadingTitle = "Creator: ❤️I love Yuanshin❤️",
+  Name = "脚本中心",
+  LoadingTitle = "制作者: ❤️I love Yuanshin❤️",
   LoadingSubtitle = "Rayfield UI",
   KeySystem = true,
   KeySettings = {
-    Title = "Script Center / please enter key",
-    Subtitle = "key system",
+    Title = "脚本中心 / 请输入密钥",
+    Subtitle = "密钥系统",
     Key = key1,
-    Note = "Join discord.gg/dwBNFa48 to open the script channel to get the key"
+    Note = "加入discord.gg/dwBNFa48获得密钥"
   }
 })
 
-local Tab = Window:CreateTab("entity generation",10791126871)
-local Tool = Window:CreateTab("tool acquisition",11713204957)
-local Game = Window:CreateTab("game modification",10799441537)
+local Tab = Window:CreateTab("实体生成",10791126871)
+local Tool = Window:CreateTab("工具获得",11713204957)
+local Game = Window:CreateTab("游戏修改",10799441537)
 local poi = Tab:CreateButton({
   Name = "A-60",
   Callback = function()
@@ -364,7 +364,7 @@ local uuu = Tab:CreateButton({
   end,
 })
 local FlickerLightsButton = Tab:CreateButton({
-  Name = "Flicker Lights",
+  Name = "闪烁灯",
   Callback = function()
     HelloWorldsound.Parent = game.Workspace
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
@@ -373,9 +373,9 @@ local FlickerLightsButton = Tab:CreateButton({
     firesignal(game.ReplicatedStorage.Bricks.UseEventModule.OnClientEvent, "flickerLights", game.ReplicatedStorage.GameData.LatestRoom.Value, 3)
   end,
 })
-local Paragraph = Tool:CreateParagraph({Title = "warn!", Content = "Crucifix only works on scripted summoned entities"})
+local Paragraph = Tool:CreateParagraph({Title = "警告!", Content = "十字架只对以自己生成的生物有效"})
 local jio = Tool:CreateButton({
-  Name = "Christmas Crucifix (Shop)",
+  Name = "圣诞十字架 (商店)",
   Callback = function()
     HelloWorldsound.Parent = game.Workspace
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
@@ -389,7 +389,7 @@ local jio = Tool:CreateButton({
 
     -- Create custom shop item
     CustomShop.CreateItem(exampleTool, {
-      Title = "Christmas crucifix",
+      Title = "圣诞十字架",
       Desc = "By ❤️i love genshin❤️!",
       Image = "rbxassetid://11574545753",
       Price = "200",
@@ -398,7 +398,7 @@ local jio = Tool:CreateButton({
   end,
 })
 local jio = Tool:CreateButton({
-  Name = "Christmas Crucifix",
+  Name = "圣诞十字架",
   Callback = function()
     HelloWorldsound.Parent = game.Workspace
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
@@ -408,7 +408,7 @@ local jio = Tool:CreateButton({
   end,
 })
 local Candle = Tool:CreateButton({
-  Name = "Candle(shop)",
+  Name = "蜡烛(商店)",
   Callback = function()
     HelloWorldsound.Parent = game.Workspace
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
@@ -468,8 +468,8 @@ local Candle = Tool:CreateButton({
     -- Create custom shop item
     if plr.PlayerGui.MainUI.ItemShop.Visible then
       CustomShop.CreateItem(Candle, {
-        Title = "Candle",
-        Desc = "light the way ahead.",
+        Title = "蜡烛",
+        Desc = "更廉价的照明工具.",
         Image = "rbxassetid://11622366799",
         Price = 75,
         Stack = 1,
@@ -480,7 +480,7 @@ local Candle = Tool:CreateButton({
   end,
 })
 local candleu = Tool:CreateButton({
-  Name = "Candle",
+  Name = "蜡烛",
   Callback = function()
     HelloWorldsound.Parent = game.Workspace
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
@@ -551,7 +551,7 @@ local uuug = Game:CreateButton({
   end,
 })
 local luuj = Game:CreateButton({
-  Name = "floor 2(Execute on pre-run shop)",
+  Name = "100关(执行在商店)",
   Callback = function()
     -- Shop Items
     local Functions = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Functions.lua"))()
@@ -608,8 +608,8 @@ local luuj = Game:CreateButton({
     -- Create custom shop item
     if plr.PlayerGui.MainUI.ItemShop.Visible then
       CustomShop.CreateItem(Candle, {
-        Title = "Candle",
-        Desc = "light the way ahead.",
+        Title = "蜡烛",
+        Desc = "更廉价的照明工具.",
         Image = "rbxassetid://11622366799",
         Price = 75,
         Stack = 1,
