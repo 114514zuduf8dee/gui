@@ -1,6 +1,6 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local HelloWorldsound = Instance.new("Sound")
-local key1 = "jntmjntm2我爱原神roblox","1400700315染羽LLL","bruhwhyinot#7637","ikundoors114514叶B(你好2023)","556783738","Door yoyoyo"
+local key1 = "Door yoyoyo","1400700315染羽LLL","bruhwhyinot#7637","ikundoors114514叶B(你好2023)","556783738","jntmjntm2我爱原神roblox"
 local Window = Rayfield:CreateWindow({
   Name = "script center",
   LoadingTitle = "Creator: ❤️I love Yuanshin❤️",
