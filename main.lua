@@ -25,7 +25,7 @@ local poi = Tab:CreateButton({
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
     HelloWorldsound.Looped = false
     HelloWorldsound:Play()
-    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/CometV4/main/Misc/CustomCreator.lua"))()
+    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
     local entity = Creator.createEntity({
       CustomName = "A60 (by ❤️I love Yuanshin❤️)", -- Custom name of your entity
       Model = "rbxassetid://11573495258", -- Can be GitHub file or rbxassetid
@@ -33,8 +33,9 @@ local poi = Tab:CreateButton({
       DelayTime = 1.5, -- Time before starting cycles (seconds)
       HeightOffset = 1,
       KillRange = 20,
+      CanKill = true,
       BreakLights = true,
-      BackwardsMovement = false,
+      BackwardsMovement = true,
       FlickerLights = {
         true, -- Enabled/Disabled
         5, -- Time (seconds)
@@ -74,7 +75,7 @@ local poi = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"you were tricked", "Rick!", "Hahahahahahahahahahaha!"},
+      CustomDialog = {"You died to who you call A-60.", "It's a tricky one!", "Use what you have learned from ambush!"}, -- Custom death message
     })
 
     -----[[ Advanced ]]-----
@@ -117,7 +118,7 @@ local ueuh = Tab:CreateButton({
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
     HelloWorldsound.Looped = false
     HelloWorldsound:Play()
-    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/CometV4/main/Misc/CustomCreator.lua"))()
+    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
 
     -- Create entity
@@ -169,7 +170,7 @@ local ueuh = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"You died to who you call A-60.", "It's a tricky one!", "Use what you have learned from ambush!"}, -- Custom death message
+      CustomDialog = {"You died to who you call Rush.", "Blinks the lights around him when he comes!", "find a hiding place asap!"}, -- Custom death message
     })
 
     -----[[ Advanced ]]-----
@@ -205,89 +206,97 @@ local ueuh = Tab:CreateButton({
     Creator.runEntity(entity)
   end,
 })
-local bsnsn = Tab:CreateButton({
-  Name = "Ambush",
+local hty = Tab:CreateButton({
+  Name = "ambush",
   Callback = function()
+    local HelloWorldsound = Instance.new("Sound")
     HelloWorldsound.Parent = game.Workspace
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
     HelloWorldsound.Looped = false
     HelloWorldsound:Play()
-    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/CometV4/main/Misc/CustomCreator.lua"))()
-
+    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
     -- Create entity
-    local entity = Creator.createEntity({
+    local ambush = Creator.createEntity({
       CustomName = "ambush (by i love Genshin)", -- Custom name of your entity
       Model = "rbxassetid://11735455702", -- Can be GitHub file or rbxassetid
       Speed = 250, -- Percentage, 100 = default Rush speed
-      DelayTime = 1.5, -- Time before starting cycles (seconds)
-      HeightOffset = 0,
-      KillRange = 50,
+      DelayTime = 5,
+      KillRange = 80,-- Time before starting cycles (seconds)
+      HeightOffset = 1,
+      CanKill = true,
       BreakLights = true,
-      BackwardsMovement = false,
+      BackwardsMovement = true,
       FlickerLights = {
         true, -- Enabled/Disabled
         5, -- Time (seconds)
       },
       Cycles = {
-        Min = 2,
-        Max = 8,
+        Min = 1,
+        Max = 1,
         WaitTime = 2,
       },
       CamShake = {
         true, -- Enabled/Disabled
-        {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
-        0, -- Shake start distance (from Entity to you)
+        {5.5, 50, 0.5, 2}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
       },
       Jumpscare = {
-        False, -- Enabled/Disabled
+        true, -- Enabled/Disabled
         {
           Image1 = "rbxassetid://10110576663", -- Image1 url
           Image2 = "rbxassetid://10110576663", -- Image2 url
           Shake = true,
           Sound1 = {
-            8880765497, -- SoundId
-            { Volume = 1 }, -- Sound properties
+            10483790459, -- SoundId
+            { Volume = 0 }, -- Sound properties
           },
           Sound2 = {
-            9045199073, -- SoundId
-            { Volume = 1 }, -- Sound properties
+            10483837590, -- SoundId
+            { Volume = 1000 }, -- Sound properties
           },
           Flashing = {
             true, -- Enabled/Disabled
             Color3.fromRGB(255, 255, 255), -- Color
           },
           Tease = {
-            False, -- Enabled/Disabled
-            Min = 1,
-            Max = 3,
+            true, -- Enabled/Disabled
+            Min = 2,
+            Max = 8,
           },
         },
       },
-      CustomDialog = {"You died to who you call A-60.", "It's a tricky one!", "Use what you have learned from ambush!"}, -- Custom death message
+      CustomDialog = {"You died to who you call ambush.", "It's a tricky one!", "Use what you have learned from rush!"}, -- Custom death message
     })
+
+    -----[[ Advanced ]]-----
+            ------------------------
+
+    -- Run the created entity
+    Creator.runEntity(ambush)
   end,
 })
-local uuu = Tab:CreateButton({
+local ui = Tab:CreateButton({
   Name = "Depth",
   Callback = function()
+    local HelloWorldsound = Instance.new("Sound")
     HelloWorldsound.Parent = game.Workspace
     HelloWorldsound.SoundId = "rbxassetid://9125361557"
     HelloWorldsound.Looped = false
     HelloWorldsound:Play()
-    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/CometV4/main/Misc/CustomCreator.lua"))()
-
+    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
 
     -- Create entity
-    local entity = Creator.createEntity({
+    local Depth = Creator.createEntity({
       CustomName = "Depth（by ❤i love genshin️❤️）", -- Custom name of your entity
       Model = "rbxassetid://11524906962", -- Can be GitHub file or rbxassetid
       Speed = 250, -- Percentage, 100 = default Rush speed
-      DelayTime = 1.5, -- Time before starting cycles (seconds)
+      DelayTime = 5,
+      KillRange = 80,-- Time before starting cycles (seconds)
       HeightOffset = 1,
-      KillRange = 50,
+      CanKill = true,
       BreakLights = true,
-      BackwardsMovement = false,
+      BackwardsMovement = true,
       FlickerLights = {
         true, -- Enabled/Disabled
         5, -- Time (seconds)
@@ -299,8 +308,8 @@ local uuu = Tab:CreateButton({
       },
       CamShake = {
         true, -- Enabled/Disabled
-        {3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
-        0, -- Shake start distance (from Entity to you)
+        {5.5, 50, 0.5, 2}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
       },
       Jumpscare = {
         true, -- Enabled/Disabled
@@ -309,12 +318,12 @@ local uuu = Tab:CreateButton({
           Image2 = "rbxassetid://11278229112", -- Image2 url
           Shake = true,
           Sound1 = {
-            8880765497, -- SoundId
-            { Volume = 10 }, -- Sound properties
+            10483790459, -- SoundId
+            { Volume = 0 }, -- Sound properties
           },
           Sound2 = {
-            8880765497, -- SoundId
-            { Volume = 10 }, -- Sound properties
+            10483837590, -- SoundId
+            { Volume = 1000 }, -- Sound properties
           },
           Flashing = {
             true, -- Enabled/Disabled
@@ -323,44 +332,88 @@ local uuu = Tab:CreateButton({
           Tease = {
             true, -- Enabled/Disabled
             Min = 1,
-            Max = 6,
+            Max = 3,
           },
         },
       },
-      CustomDialog = {"you were tricked", "Rick!", "Hahahahahahahahahahaha!"},
+      CustomDialog = {"are depth killed", "use the skills you learned at ambush", "hope you don't die next time!"}, -- Custom death message
     })
 
     -----[[ Advanced ]]-----
-    entity.Debug.OnEntitySpawned = function(entityTable)
-      print("Entity has spawned:", entityTable.Model)
-    end
-
-    entity.Debug.OnEntityDespawned = function(entityTable)
-      print("Entity has despawned:", entityTable.Model)
-    end
-
-    entity.Debug.OnEntityStartMoving = function(entityTable)
-      CanKill = true
-    end
-
-    entity.Debug.OnEntityFinishedRebound = function(entityTable)
-      print("Entity has finished rebound:", entityTable.Model)
-    end
-
-    entity.Debug.OnEntityEnteredRoom = function(entityTable, room)
-      print("Entity:", entityTable.Model, "has entered room:", room)
-    end
-
-    entity.Debug.OnLookAtEntity = function(entityTable)
-      print("Player has looked at entity:", entityTable.Model)
-    end
-
-    entity.Debug.OnDeath = function(entityTable)
-    end
-    ------------------------
+            ------------------------
 
     -- Run the created entity
-    Creator.runEntity(entity)
+    Creator.runEntity(Depth)
+  end,
+})
+local h = Tab:CreateButton({
+  Name = "Trauma",
+  Callback = function()
+    local HelloWorldsound = Instance.new("Sound")
+    HelloWorldsound.Parent = game.Workspace
+    HelloWorldsound.SoundId = "rbxassetid://9125361557"
+    HelloWorldsound.Looped = false
+    HelloWorldsound:Play()
+    local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+    -- Create entity
+    local Trauma = Creator.createEntity({
+      CustomName = "Trauma", -- Custom name of your entity
+      Model = "11546178972", -- Can be GitHub file or rbxassetid
+      Speed = 600, -- Percentage, 100 = default Rush speed
+      DelayTime = 5,
+      KillRange = 80,-- Time before starting cycles (seconds)
+      HeightOffset = 1,
+      CanKill = true,
+      BreakLights = true,
+      BackwardsMovement = true,
+      FlickerLights = {
+        true, -- Enabled/Disabled
+        5, -- Time (seconds)
+      },
+      Cycles = {
+        Min = 1,
+        Max = 1,
+        WaitTime = 2,
+      },
+      CamShake = {
+        true, -- Enabled/Disabled
+        {5.5, 50, 0.5, 2}, -- Shake values (don't change if you don't know)
+        100, -- Shake start distance (from Entity to you)
+      },
+      Jumpscare = {
+        true, -- Enabled/Disabled
+        {
+          Image1 = "rbxassetid://11421228231", -- Image1 url
+          Image2 = "rbxassetid://11421228231", -- Image2 url
+          Shake = true,
+          Sound1 = {
+            10483790459, -- SoundId
+            { Volume = 0 }, -- Sound properties
+          },
+          Sound2 = {
+            10483837590, -- SoundId
+            { Volume = 1000 }, -- Sound properties
+          },
+          Flashing = {
+            true, -- Enabled/Disabled
+            Color3.fromRGB(255, 255, 255), -- Color
+          },
+          Tease = {
+            true, -- Enabled/Disabled
+            Min = 1,
+            Max = 3,
+          },
+        },
+      },
+      CustomDialog = {"You died to Trauma...", "Use what you've learned from Rush and Ambush!","This Mob Randomly Spawns Theres No Patten to it"}, -- Custom death message
+    })
+
+    -----[[ Advanced ]]-----
+            ------------------------
+
+    -- Run the created entity
+    Creator.runEntity(Trauma)
   end,
 })
 local FlickerLightsButton = Tab:CreateButton({
