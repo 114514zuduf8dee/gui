@@ -53,16 +53,16 @@ local poi = Tab:CreateButton({
       Jumpscare = {
         true, -- Enabled/Disabled
         {
-          Image1 = "rbxassetid://11287256498", -- Image1 url
-          Image2 = "rbxassetid://11287256498", -- Image2 url
+          Image1 = "rbxassetid://10483837590", -- Image1 url
+          Image2 = "rbxassetid://10483837590", -- Image2 url
           Shake = true,
           Sound1 = {
-            3359047385, -- SoundId
-            { Volume = 10 }, -- Sound properties
+            10483837590, -- SoundId
+            { Volume = 0 }, -- Sound properties
           },
           Sound2 = {
-            3359047385, -- SoundId
-            { Volume = 10 }, -- Sound properties
+            10483837590, -- SoundId
+            { Volume = 1000 }, -- Sound properties
           },
           Flashing = {
             true, -- Enabled/Disabled
