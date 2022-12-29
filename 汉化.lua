@@ -626,7 +626,7 @@ local luuj = Game:CreateButton({
       game.Workspace.Ambience_Seek.SoundId = "rbxassetid://1848156876"
     end
     -- Settings
-    firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "The reprinted author is ❤️I love Yuanshin❤️..")
+    firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "转载作者是 ❤️I love Yuanshin❤️.")
     game.Players.LocalPlayer.PlayerGui.MainUI.Statistics.Frame["Floors Escaped"].Text = "Floors Escaped (2)"
 
     -- Lighting Setup
@@ -665,5 +665,16 @@ local luuj = Game:CreateButton({
       game.Lighting.FogEnd = "75"
       game.Lighting.FogStart = "10"
     end
+  end,
+})
+local pjjyu = Game:CreateButton({
+  Name = "硬核模式(Muhhamad)",
+  Callback = function()
+    HelloWorldsound.Parent = game.Workspace
+    HelloWorldsound.SoundId = "rbxassetid://9125361557"
+    HelloWorldsound.Looped = false
+    HelloWorldsound:Play()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/DoorsModes/HardMode(Multplayer%2CProtected).lua'))()
+    firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "硬核模式已启用 by Muhhamad.")
   end,
 })
