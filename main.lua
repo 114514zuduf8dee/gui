@@ -675,5 +675,6 @@ local pjjyu = Game:CreateButton({
     HelloWorldsound.Looped = false
     HelloWorldsound:Play()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/DoorsModes/HardMode(Multplayer%2CProtected).lua'))()
+    firesignal(game.ReplicatedStorage.Bricks.Caption.OnClientEvent, "Hardcore Mode Enabled Hardcore Mode Enabled by Muhhamad.")
   end,
 })
