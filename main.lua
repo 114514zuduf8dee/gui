@@ -667,3 +667,13 @@ local luuj = Game:CreateButton({
     end
   end,
 })
+local pjjyu = Game:CreateButton({
+  Name = "hardcore mode(Muhhamad)",
+  Callback = function()
+    HelloWorldsound.Parent = game.Workspace
+    HelloWorldsound.SoundId = "rbxassetid://9125361557"
+    HelloWorldsound.Looped = false
+    HelloWorldsound:Play()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/MuhXd/DoorSuff/main/DoorsModes/HardMode(Multplayer%2CProtected).lua'))()
+  end,
+})
