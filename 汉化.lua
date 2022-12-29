@@ -74,7 +74,7 @@ local poi = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"you were tricked", "Rick!", "Hahahahahahahahahahaha!"},
+      CustomDialog = {"你死于被称作A-60的家伙.", "它很难缠!", "使用你在ambush学习的技巧!"}, -- Custom death message
     })
 
     -----[[ Advanced ]]-----
@@ -170,7 +170,7 @@ local ueuh = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"You died to who you call Rush.", "Blinks the lights around him when he comes!", "find a hiding place asap!"}, -- Custom death message
+      CustomDialog = {"你死于Rush.", "它来的时候会闪烁灯!", "尽快找到一个藏身之处!"}, -- Custom death message
     })
     Creator.runEntity(rush)
   end,
@@ -236,7 +236,7 @@ local hty = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"You died to who you call ambush.", "It's a tricky one!", "Use what you have learned from rush!"}, -- Custom death message
+      CustomDialog = {"你死于ambush.", "这个怪物非常的快!", "使用你在rush学习的技巧!"}, -- Custom death message
     })
 
     -----[[ Advanced ]]-----
@@ -306,7 +306,7 @@ local ui = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"are depth killed", "use the skills you learned at ambush", "hope you don't die next time!"}, -- Custom death message
+      CustomDialog = {"你被depth杀死了", "使用躲避A-60时的技巧", "祝你好运!"}, -- Custom death message
     })
 
     -----[[ Advanced ]]-----
@@ -376,7 +376,7 @@ local h = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"You died to Trauma...", "Use what you've learned from Rush and Ambush!","This Mob Randomly Spawns Theres No Patten to it"}, -- Custom death message
+      CustomDialog = {"你死于Trauma...", "使用躲避Rush和Ambush时的技巧!","这个怪物会在101关后面随机生成"}, -- Custom death message
     })
 
     -----[[ Advanced ]]-----
@@ -446,7 +446,7 @@ local ugf = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"You died to who you call vhs!sans...", "Try your best to out-run him.", "I really don't have nothing else", "Just try your best to run and Hide when you can."}, -- Custom death message
+      CustomDialog = {"你死在被称作vhs!sans...", "使用最快的速度跑过它.", "他将在150关以后随机生成", "尽可能的逃跑和躲避."}, -- Custom death message
     })
 
     ------------------------
@@ -510,7 +510,7 @@ local ttfg = Tab:CreateButton({
           },
         },
       },
-      CustomDialog = {"¡¡ THIS SMILE IS LIKE ABMUSH !!", "Hide and don't Smile", "Don't get Tricked"}, -- Custom death message (can be as long as you want)
+      CustomDialog = {"¡¡这个Smiler就像ABMUSH一样 !!", "躲起来", "千万不要出来！！！"}, -- Custom death message (can be as long as you want)
     })
 
     -----[[ Advanced ]]-----
