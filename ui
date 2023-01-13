@@ -25,9 +25,9 @@ local RayfieldLibrary = {
 			TextFont = "Default", -- Default will use the various font faces used across Rayfield
 			TextColor = Color3.fromRGB(240, 240, 240),
 			
-			Background = Color3.fromRGB(25, 25, 25),
-			Topbar = Color3.fromRGB(34, 34, 34),
-			Shadow = Color3.fromRGB(20, 20, 20),
+			Background = Color3.fromRGB(139,69,19),
+			Topbar = Color3.fromRGB(139,69,19),
+			Shadow = Color3.fromRGB(139,69,19),
 			
 			NotificationBackground = Color3.fromRGB(25,25,112),
 			NotificationActionsBackground = Color3.fromRGB(25,25,112),
@@ -58,13 +58,13 @@ local RayfieldLibrary = {
 			
 			InputBackground = Color3.fromRGB(30, 30, 30),
 			InputStroke = Color3.fromRGB(65, 65, 65),
-			PlaceholderColor = Color3.fromRGB(178, 178, 178)
+			PlaceholderColor = Color3.fromRGB(139,69,19)
 		},
 		Light = {
 			TextFont = "Gotham", -- Default will use the various font faces used across Rayfield
 			TextColor = Color3.fromRGB(50, 50, 50), -- i need to make all text 240, 240, 240 and base gray on transparency not color to do this
 			
-			Background = Color3.fromRGB(255, 255, 255),
+			Background = Color3.fromRGB(139,69,19),
 			Topbar = Color3.fromRGB(217, 217, 217),
 			Shadow = Color3.fromRGB(223, 223, 223),
 
